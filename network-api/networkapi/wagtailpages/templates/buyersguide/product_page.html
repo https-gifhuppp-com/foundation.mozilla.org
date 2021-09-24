@@ -25,7 +25,7 @@
 <div class="text-center product-header bg-product-image{% if product.draft %} draft-product{% endif %}">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-10 offset-lg-1 product-header-content {% if product.privacy_ding %}show-privacy-ding{% endif %}">
+      <div class="large:tw-w-[69%] tw-w-full tw-mx-auto tw-relative product-header-content {% if product.privacy_ding %}show-privacy-ding{% endif %}">
         <img
           class="thumb-border tw-mx-auto"
           width="250"
@@ -37,17 +37,17 @@
     </div>
   </div>
 </div>
-{% with section_class="col-12 col-lg-10 offset-lg-1" %}
+{% with section_class="large:tw-w-[69%] tw-w-full tw-mx-auto tw-relative" %}
 <div class="container product-detail">
   <div class="row">
 
     {% if product.privacy_ding %}
-    <div class="privacy-ding-band px-md-5 {{section_class}}">
+    <div class="privacy-ding-band px-md-3 {{section_class}}">
       <p class="pni-product-smaller-body mb-0 py-2">{% blocktrans %}<strong>Warning</strong>: *privacy not included with this product{% endblocktrans %}</p>
     </div>
     {% endif %}
 
-    <div class="bg-white py-3 py-md-4 px-md-5 {{section_class}}">
+    <div class="bg-white py-3 py-md-4 medium:tw-px-6 tw-px-4 {{section_class}}">
       <div class="row intro mb-4">
         <div class="tw-flex tw-space-x-2 tw-flex-wrap tw-px-4 tw-mb-4">
           {% for cat in product.product_categories.all %}
